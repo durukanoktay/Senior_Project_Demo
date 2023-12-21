@@ -11,11 +11,17 @@
 		38350FCB2B1C971D0034C0D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38350FCA2B1C971D0034C0D1 /* ContentView.swift */; };
 		38350FCD2B1C971D0034C0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38350FCC2B1C971D0034C0D1 /* Assets.xcassets */; };
 		38350FD02B1C971D0034C0D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38350FCF2B1C971D0034C0D1 /* Preview Assets.xcassets */; };
-		385E020C2B2DC0DC0044EEAE /* profile .swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E020B2B2DC0DC0044EEAE /* profile .swift */; };
+		385E020C2B2DC0DC0044EEAE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E020B2B2DC0DC0044EEAE /* Profile.swift */; };
 		385E02152B2DCA040044EEAE /* navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E02142B2DCA040044EEAE /* navbar.swift */; };
 		385E02172B2DCF7C0044EEAE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E02162B2DCF7C0044EEAE /* Home.swift */; };
 		385E021D2B2DE3070044EEAE /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E021C2B2DE3070044EEAE /* Friends.swift */; };
 		385E02232B2EF1950044EEAE /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E02222B2EF1950044EEAE /* Explore.swift */; };
+		388A8E3E2B344C1D00C4B894 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388A8E3D2B344C1D00C4B894 /* Messages.swift */; };
+		38CAEB682B319F19007F2334 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAEB672B319F19007F2334 /* HealthKitManager.swift */; };
+		38CAEB6B2B31A1EB007F2334 /* PlaceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAEB6A2B31A1EB007F2334 /* PlaceCategory.swift */; };
+		38CAEB6D2B31A221007F2334 /* SportActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAEB6C2B31A221007F2334 /* SportActivity.swift */; };
+		38CAEB6F2B31A241007F2334 /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAEB6E2B31A241007F2334 /* HealthData.swift */; };
+		38CAEB712B31A265007F2334 /* SportActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAEB702B31A265007F2334 /* SportActivityData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +30,19 @@
 		38350FCA2B1C971D0034C0D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		38350FCC2B1C971D0034C0D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38350FCF2B1C971D0034C0D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		385E020B2B2DC0DC0044EEAE /* profile .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "profile .swift"; sourceTree = "<group>"; };
+		385E020B2B2DC0DC0044EEAE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		385E02142B2DCA040044EEAE /* navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navbar.swift; sourceTree = "<group>"; };
 		385E02162B2DCF7C0044EEAE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		385E021C2B2DE3070044EEAE /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 		385E02222B2EF1950044EEAE /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
+		3877EADD2B31970A0004F360 /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
+		3877EADE2B31971E0004F360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		388A8E3D2B344C1D00C4B894 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		38CAEB672B319F19007F2334 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		38CAEB6A2B31A1EB007F2334 /* PlaceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCategory.swift; sourceTree = "<group>"; };
+		38CAEB6C2B31A221007F2334 /* SportActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportActivity.swift; sourceTree = "<group>"; };
+		38CAEB6E2B31A241007F2334 /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData.swift; sourceTree = "<group>"; };
+		38CAEB702B31A265007F2334 /* SportActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportActivityData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +59,11 @@
 		38350FBC2B1C971D0034C0D1 = {
 			isa = PBXGroup;
 			children = (
+				38CAEB722B31A7D3007F2334 /* Controllers */,
+				38CAEB692B31A19B007F2334 /* Models */,
+				38CAEB662B319ED8007F2334 /* Services */,
 				38350FC72B1C971D0034C0D1 /* Demo */,
-				385E02132B2DC9DE0044EEAE /* NavbarIconClick */,
+				385E02132B2DC9DE0044EEAE /* Prototypes */,
 				38350FC62B1C971D0034C0D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,14 +79,16 @@
 		38350FC72B1C971D0034C0D1 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				38350FC82B1C971D0034C0D1 /* DemoApp.swift */,
+				38350FCE2B1C971D0034C0D1 /* Preview Content */,
+				3877EADE2B31971E0004F360 /* Info.plist */,
+				3877EADD2B31970A0004F360 /* Demo.entitlements */,
+				38350FCC2B1C971D0034C0D1 /* Assets.xcassets */,
 				38350FCA2B1C971D0034C0D1 /* ContentView.swift */,
 				385E02162B2DCF7C0044EEAE /* Home.swift */,
-				385E020B2B2DC0DC0044EEAE /* profile .swift */,
+				38350FC82B1C971D0034C0D1 /* DemoApp.swift */,
+				385E020B2B2DC0DC0044EEAE /* Profile.swift */,
 				385E021C2B2DE3070044EEAE /* Friends.swift */,
 				385E02222B2EF1950044EEAE /* Explore.swift */,
-				38350FCC2B1C971D0034C0D1 /* Assets.xcassets */,
-				38350FCE2B1C971D0034C0D1 /* Preview Content */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -82,12 +101,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		385E02132B2DC9DE0044EEAE /* NavbarIconClick */ = {
+		385E02132B2DC9DE0044EEAE /* Prototypes */ = {
 			isa = PBXGroup;
 			children = (
+				38CAEB672B319F19007F2334 /* HealthKitManager.swift */,
 				385E02142B2DCA040044EEAE /* navbar.swift */,
 			);
-			path = NavbarIconClick;
+			path = Prototypes;
+			sourceTree = "<group>";
+		};
+		38CAEB662B319ED8007F2334 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		38CAEB692B31A19B007F2334 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38CAEB6A2B31A1EB007F2334 /* PlaceCategory.swift */,
+				38CAEB6C2B31A221007F2334 /* SportActivity.swift */,
+				38CAEB6E2B31A241007F2334 /* HealthData.swift */,
+				38CAEB702B31A265007F2334 /* SportActivityData.swift */,
+				388A8E3D2B344C1D00C4B894 /* Messages.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38CAEB722B31A7D3007F2334 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,13 +206,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385E020C2B2DC0DC0044EEAE /* profile .swift in Sources */,
+				385E020C2B2DC0DC0044EEAE /* Profile.swift in Sources */,
+				38CAEB712B31A265007F2334 /* SportActivityData.swift in Sources */,
 				385E021D2B2DE3070044EEAE /* Friends.swift in Sources */,
+				38CAEB682B319F19007F2334 /* HealthKitManager.swift in Sources */,
 				38350FCB2B1C971D0034C0D1 /* ContentView.swift in Sources */,
+				38CAEB6B2B31A1EB007F2334 /* PlaceCategory.swift in Sources */,
+				388A8E3E2B344C1D00C4B894 /* Messages.swift in Sources */,
 				38350FC92B1C971D0034C0D1 /* DemoApp.swift in Sources */,
 				385E02172B2DCF7C0044EEAE /* Home.swift in Sources */,
 				385E02152B2DCA040044EEAE /* navbar.swift in Sources */,
 				385E02232B2EF1950044EEAE /* Explore.swift in Sources */,
+				38CAEB6F2B31A241007F2334 /* HealthData.swift in Sources */,
+				38CAEB6D2B31A221007F2334 /* SportActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,16 +349,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = B2D468BFD4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "your health data is required for system";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "your health data is required for application";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,16 +383,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = B2D468BFD4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "your health data is required for system";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "your health data is required for application";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

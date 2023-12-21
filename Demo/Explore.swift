@@ -31,7 +31,10 @@ struct Explore: View {
                     Image(friend.avatar)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 50, height: 50)
+                        .frame(width: 50, height: 50).clipShape(Circle())
+                        .overlay(
+                            Circle().stroke(Color.green, lineWidth: 2)
+                    )
                     VStack(alignment: .leading) {
                         Text(friend.name)
                         Text("Mutual friends: \(friend.mutual)")
@@ -43,7 +46,7 @@ struct Explore: View {
                         Button(action: {
                             selectedFriend = friend
                         }) {
-                            Text("Add Friend")
+                            Text("Send Friendship Request")
                                 .foregroundColor(.blue)
                         }
                     }
@@ -57,7 +60,7 @@ struct Explore: View {
                     )
                 )
             }
-            .navigationTitle("Friend List")
+            .navigationTitle("Suggested Users")
         }
     }
 }

@@ -7,17 +7,11 @@
 
 import SwiftUI
 
-struct Message: Identifiable {
-    var id = UUID()
-    var senderName: String
-    var content: String
-}
-
 struct Friends: View {
     var messages: [Message] = [
-        Message(senderName: "Mert ç.", content: "Merhaba!"),
-        Message(senderName: "Alper D.", content: "Nasılsın?"),
-        Message(senderName: "Durukan O.", content: "Selam!")
+        Message(senderName: "Mert ç.", content: "Merhaba!", seen: true),
+        Message(senderName: "Alper D.", content: "Nasılsın?", seen: false),
+        Message(senderName: "Durukan O.", content: "Selam!", seen: false)
     ]
 
     var body: some View {
@@ -28,8 +22,18 @@ struct Friends: View {
                         VStack(alignment: .leading) {
                             Text(message.senderName)
                                 .font(.headline)
-                            Text(message.content)
-                                .foregroundColor(.gray)
+                            if
+                                (message.seen == true)
+                            {
+                                Text(message.content)
+                                    .foregroundColor(.gray)
+                            }
+                            else 
+                            {
+                                Text(message.content)
+                                    .foregroundColor(.black)
+                            }
+                            
                         }
                         Spacer()
                     }
