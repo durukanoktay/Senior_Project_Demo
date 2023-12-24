@@ -7,12 +7,14 @@
 
 import SwiftUI
 
+
+
 struct RegisterView: View {
-    @State private var name: String = ""
-    @State private var password: String = ""
-    @State private var surname: String = ""
-    @State private var email: String = ""
+    @StateObject var RegisterViewModel: RegisterViewModel
     var body: some View {
+        
+        
+        
         NavigationView {
             VStack {
                 Text("Hesap Oluştur")
@@ -22,7 +24,7 @@ struct RegisterView: View {
                 VStack(alignment: .leading) {
                     Text("Ad")
                         .font(.headline)
-                    TextField("Adınız", text: $name)
+                    TextField("Adınız", text: $RegisterViewModel.name)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
@@ -30,7 +32,7 @@ struct RegisterView: View {
                     
                     Text("Soyad")
                         .font(.headline)
-                    TextField("Soyadınız", text: $surname)
+                    TextField("Soyadınız", text: $RegisterViewModel.surname)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
@@ -38,7 +40,7 @@ struct RegisterView: View {
                     
                     Text("E-posta")
                         .font(.headline)
-                    TextField("E-posta adresiniz", text: $email)
+                    TextField("E-posta adresiniz", text: $RegisterViewModel.email)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
@@ -48,7 +50,7 @@ struct RegisterView: View {
                     
                     Text("Şifre")
                         .font(.headline)
-                    SecureField("Şifreniz", text: $password)
+                    SecureField("Şifreniz", text: $RegisterViewModel.password)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
@@ -66,5 +68,7 @@ struct RegisterView: View {
 
 
 #Preview {
+
     RegisterView()
+    
 }
