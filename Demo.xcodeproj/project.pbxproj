@@ -14,13 +14,17 @@
 		385A046C2B35929D00C86B8D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A046B2B35929D00C86B8D /* LoginView.swift */; };
 		385A04752B35983400C86B8D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A04742B35983400C86B8D /* LoginViewModel.swift */; };
 		385A04772B35999900C86B8D /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A04762B35999900C86B8D /* RegisterViewModel.swift */; };
-		385A04792B3599AA00C86B8D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A04782B3599AA00C86B8D /* RegisterView.swift */; };
 		385E020C2B2DC0DC0044EEAE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E020B2B2DC0DC0044EEAE /* Profile.swift */; };
 		385E02152B2DCA040044EEAE /* navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E02142B2DCA040044EEAE /* navbar.swift */; };
 		385E02172B2DCF7C0044EEAE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E02162B2DCF7C0044EEAE /* Home.swift */; };
 		385E021D2B2DE3070044EEAE /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E021C2B2DE3070044EEAE /* Friends.swift */; };
 		385E02232B2EF1950044EEAE /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E02222B2EF1950044EEAE /* Explore.swift */; };
 		388A8E3E2B344C1D00C4B894 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388A8E3D2B344C1D00C4B894 /* Messages.swift */; };
+		389451F92B3AF7D500F54854 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389451F82B3AF7D500F54854 /* RegisterView.swift */; };
+		389451FD2B3B0F4200F54854 /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389451FC2B3B0F4200F54854 /* Health.swift */; };
+		389452002B3B18C500F54854 /* HealthActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389451FF2B3B18C500F54854 /* HealthActivityManager.swift */; };
+		389452022B3B1D2000F54854 /* SportActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389452012B3B1D2000F54854 /* SportActivityManager.swift */; };
+		389452042B3B20FF00F54854 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389452032B3B20FF00F54854 /* UserSettings.swift */; };
 		38CAEB682B319F19007F2334 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAEB672B319F19007F2334 /* HealthKitManager.swift */; };
 		38CAEB6B2B31A1EB007F2334 /* PlaceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAEB6A2B31A1EB007F2334 /* PlaceCategory.swift */; };
 		38CAEB6D2B31A221007F2334 /* SportActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAEB6C2B31A221007F2334 /* SportActivity.swift */; };
@@ -37,7 +41,6 @@
 		385A046B2B35929D00C86B8D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		385A04742B35983400C86B8D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		385A04762B35999900C86B8D /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
-		385A04782B3599AA00C86B8D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		385E020B2B2DC0DC0044EEAE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		385E02142B2DCA040044EEAE /* navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navbar.swift; sourceTree = "<group>"; };
 		385E02162B2DCF7C0044EEAE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -46,6 +49,11 @@
 		3877EADD2B31970A0004F360 /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
 		3877EADE2B31971E0004F360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		388A8E3D2B344C1D00C4B894 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		389451F82B3AF7D500F54854 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		389451FC2B3B0F4200F54854 /* Health.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
+		389451FF2B3B18C500F54854 /* HealthActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthActivityManager.swift; sourceTree = "<group>"; };
+		389452012B3B1D2000F54854 /* SportActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportActivityManager.swift; sourceTree = "<group>"; };
+		389452032B3B20FF00F54854 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		38CAEB672B319F19007F2334 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		38CAEB6A2B31A1EB007F2334 /* PlaceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCategory.swift; sourceTree = "<group>"; };
 		38CAEB6C2B31A221007F2334 /* SportActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportActivity.swift; sourceTree = "<group>"; };
@@ -67,6 +75,7 @@
 		38350FBC2B1C971D0034C0D1 = {
 			isa = PBXGroup;
 			children = (
+				389451FE2B3B18A400F54854 /* Managers */,
 				38CAEB722B31A7D3007F2334 /* Controllers */,
 				38CAEB692B31A19B007F2334 /* Models */,
 				38CAEB662B319ED8007F2334 /* Services */,
@@ -114,7 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				385A046B2B35929D00C86B8D /* LoginView.swift */,
-				385A04782B3599AA00C86B8D /* RegisterView.swift */,
+				389451F82B3AF7D500F54854 /* RegisterView.swift */,
+				389452032B3B20FF00F54854 /* UserSettings.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -137,6 +147,15 @@
 			path = Prototypes;
 			sourceTree = "<group>";
 		};
+		389451FE2B3B18A400F54854 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				389451FF2B3B18C500F54854 /* HealthActivityManager.swift */,
+				389452012B3B1D2000F54854 /* SportActivityManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		38CAEB662B319ED8007F2334 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +172,7 @@
 				38CAEB6E2B31A241007F2334 /* HealthData.swift */,
 				38CAEB702B31A265007F2334 /* SportActivityData.swift */,
 				388A8E3D2B344C1D00C4B894 /* Messages.swift */,
+				389451FC2B3B0F4200F54854 /* Health.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,14 +255,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				385E020C2B2DC0DC0044EEAE /* Profile.swift in Sources */,
+				389452022B3B1D2000F54854 /* SportActivityManager.swift in Sources */,
 				38CAEB712B31A265007F2334 /* SportActivityData.swift in Sources */,
 				385E021D2B2DE3070044EEAE /* Friends.swift in Sources */,
+				389452042B3B20FF00F54854 /* UserSettings.swift in Sources */,
 				385A04772B35999900C86B8D /* RegisterViewModel.swift in Sources */,
 				38CAEB682B319F19007F2334 /* HealthKitManager.swift in Sources */,
 				38350FCB2B1C971D0034C0D1 /* ContentView.swift in Sources */,
+				389452002B3B18C500F54854 /* HealthActivityManager.swift in Sources */,
 				38CAEB6B2B31A1EB007F2334 /* PlaceCategory.swift in Sources */,
+				389451FD2B3B0F4200F54854 /* Health.swift in Sources */,
 				388A8E3E2B344C1D00C4B894 /* Messages.swift in Sources */,
-				385A04792B3599AA00C86B8D /* RegisterView.swift in Sources */,
+				389451F92B3AF7D500F54854 /* RegisterView.swift in Sources */,
 				38350FC92B1C971D0034C0D1 /* DemoApp.swift in Sources */,
 				385A04752B35983400C86B8D /* LoginViewModel.swift in Sources */,
 				385A046C2B35929D00C86B8D /* LoginView.swift in Sources */,

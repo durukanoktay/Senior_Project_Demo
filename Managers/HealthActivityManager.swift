@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct HealthActivityManager: View {
+    
+    @State private var selectedHealth: Health?
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+           Section(header: Text("Değerleri Değiştir:")) {
+               Picker("Aktivite Seç", selection: $selectedHealth) {
+                   ForEach(Health.allCases, id: \.self) { health in
+                       Text(health.description).tag(health)
+                   }
+               }.pickerStyle(WheelPickerStyle())
+               
+               Button("Sağlık bilgisini Değiştir") {
+
+               }.font(.headline)
+                   .foregroundColor(.white)
+                   .padding()
+                   .frame(maxWidth: .infinity)
+                   .background(Color.blue)
+                   .cornerRadius(10)
+           }.padding(20)
     }
 }
 

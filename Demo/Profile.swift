@@ -16,7 +16,7 @@ struct Profile: View {
                     .frame(width: 150.0, height: 150.0)
                     .clipShape(Circle())
                     .overlay(
-                        Circle().stroke(Color.black, lineWidth: 5)
+                        Circle().stroke(Color.purple, lineWidth: 5)
                     )
                 Text("Name")
                     .font(Font.custom("Pacifico-Regular", size: 40))
@@ -42,9 +42,9 @@ struct Profile: View {
                         .foregroundColor(.gray)
                         .overlay(Text("BMI:"))
                     
-                    NavigationLink(destination: Home()) {
+                    NavigationLink(destination: UserSettings()) {
                         Image(systemName: "gearshape")
-                    }
+                    }.padding()
                 }
             }
         }

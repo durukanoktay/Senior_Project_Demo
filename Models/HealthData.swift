@@ -9,7 +9,7 @@ import Foundation
 
 struct HealthData: Identifiable {
     var id = UUID()
-    var dataType: String
     var value: String
-    var symbolName: String
+    var icon: String
+    var healthtype: Health
 }

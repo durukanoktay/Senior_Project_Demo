@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
-    @StateObject var loginViewModel: LoginViewModel
-    
+ 
+    @State var username: String = ""
+    @State var password: String = ""
+    @State private var redirectToHome = false
     var body: some View {
         NavigationView {
             VStack {
@@ -21,7 +23,7 @@ struct LoginView: View {
                 VStack(alignment: .leading) {
                     Text("E-posta")
                         .font(.headline)
-                    TextField("E-posta adresiniz", text: $loginViewModel.username)
+                    TextField("E-posta adresiniz", text: $username)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
@@ -31,7 +33,7 @@ struct LoginView: View {
                     
                     Text("Şifre")
                         .font(.headline)
-                    SecureField("Şifreniz", text: $loginViewModel.password)
+                    SecureField("Şifreniz", text: $password)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
@@ -40,12 +42,22 @@ struct LoginView: View {
                     
                 }
                 .padding()
+                NavigationLink(destination: Home(), isActive: $redirectToHome)
+                {
+                    Button("Giriş Yap") {
+                        redirectToHome = true
+                    }.font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                }
             }
         }
     }
 }
 
 #Preview {
-
-    LoginView(loginViewModel: <#LoginViewModel#>)
+LoginView()
 }
