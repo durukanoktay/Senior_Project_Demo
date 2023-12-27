@@ -14,6 +14,8 @@ struct RegisterView: View {
     @State var password: String = ""
     @State var String = ""
     @State var email: String = ""
+    @State var userAgreement = false
+    @State var healthAgreement = false
     @State private var redirectToLoginView = false
     
     
@@ -63,6 +65,24 @@ struct RegisterView: View {
                     
                 }
                 .padding()
+                
+                
+                Toggle(isOn: $healthAgreement) {
+                    Text("Health Agreement")
+                        .padding()
+                        .onTapGesture {
+                            healthAgreement.toggle()
+                        }
+                }
+                
+                Toggle(isOn: $userAgreement) {
+                    Text("User Agreement")
+                        .padding()
+                        .onTapGesture {
+                            userAgreement.toggle()
+                        }
+                }
+                
                 NavigationLink(destination: LoginView(), isActive: $redirectToLoginView)
                 {
                     Button("Kayıt Ol!") {

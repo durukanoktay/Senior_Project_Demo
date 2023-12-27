@@ -12,4 +12,6 @@ struct Message: Identifiable {
     var senderName: String
     var content: String
     var seen: Bool
+    var date: String
+    var time: String
 }

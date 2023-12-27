@@ -12,8 +12,8 @@ class RegisterViewModel: ObservableObject
     @Published  var name: String = ""
     @Published  var surname: String = ""
     @Published  var password: String = ""
-    @Published  var String = ""
     @Published  var email: String = ""
-    
+    @Published var userAgreement = false
+    @Published var healthAgreement = false
 }
 

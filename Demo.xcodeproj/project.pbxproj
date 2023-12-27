@@ -19,6 +19,7 @@
 		385E02172B2DCF7C0044EEAE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E02162B2DCF7C0044EEAE /* Home.swift */; };
 		385E021D2B2DE3070044EEAE /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E021C2B2DE3070044EEAE /* Friends.swift */; };
 		385E02232B2EF1950044EEAE /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E02222B2EF1950044EEAE /* Explore.swift */; };
+		386F10002B3C739F008BC0A6 /* SliderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386F0FFF2B3C739F008BC0A6 /* SliderTest.swift */; };
 		388A8E3E2B344C1D00C4B894 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388A8E3D2B344C1D00C4B894 /* Messages.swift */; };
 		389451F92B3AF7D500F54854 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389451F82B3AF7D500F54854 /* RegisterView.swift */; };
 		389451FD2B3B0F4200F54854 /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389451FC2B3B0F4200F54854 /* Health.swift */; };
@@ -30,6 +31,9 @@
 		38CAEB6D2B31A221007F2334 /* SportActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAEB6C2B31A221007F2334 /* SportActivity.swift */; };
 		38CAEB6F2B31A241007F2334 /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAEB6E2B31A241007F2334 /* HealthData.swift */; };
 		38CAEB712B31A265007F2334 /* SportActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CAEB702B31A265007F2334 /* SportActivityData.swift */; };
+		38EDD3592B3BF9AB00F56AA1 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EDD3582B3BF9AB00F56AA1 /* ChatManager.swift */; };
+		38EDD35B2B3BF9E900F56AA1 /* ChatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EDD35A2B3BF9E900F56AA1 /* ChatData.swift */; };
+		38EDD35D2B3BFA8F00F56AA1 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EDD35C2B3BFA8F00F56AA1 /* Chat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,7 @@
 		385E02162B2DCF7C0044EEAE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		385E021C2B2DE3070044EEAE /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 		385E02222B2EF1950044EEAE /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
+		386F0FFF2B3C739F008BC0A6 /* SliderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTest.swift; sourceTree = "<group>"; };
 		3877EADD2B31970A0004F360 /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
 		3877EADE2B31971E0004F360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		388A8E3D2B344C1D00C4B894 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
@@ -59,6 +64,9 @@
 		38CAEB6C2B31A221007F2334 /* SportActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportActivity.swift; sourceTree = "<group>"; };
 		38CAEB6E2B31A241007F2334 /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData.swift; sourceTree = "<group>"; };
 		38CAEB702B31A265007F2334 /* SportActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportActivityData.swift; sourceTree = "<group>"; };
+		38EDD3582B3BF9AB00F56AA1 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		38EDD35A2B3BF9E900F56AA1 /* ChatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatData.swift; sourceTree = "<group>"; };
+		38EDD35C2B3BFA8F00F56AA1 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +151,7 @@
 			children = (
 				38CAEB672B319F19007F2334 /* HealthKitManager.swift */,
 				385E02142B2DCA040044EEAE /* navbar.swift */,
+				386F0FFF2B3C739F008BC0A6 /* SliderTest.swift */,
 			);
 			path = Prototypes;
 			sourceTree = "<group>";
@@ -152,6 +161,7 @@
 			children = (
 				389451FF2B3B18C500F54854 /* HealthActivityManager.swift */,
 				389452012B3B1D2000F54854 /* SportActivityManager.swift */,
+				38EDD3582B3BF9AB00F56AA1 /* ChatManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -168,11 +178,13 @@
 			children = (
 				385A046F2B3593D300C86B8D /* User Models */,
 				38CAEB6A2B31A1EB007F2334 /* PlaceCategory.swift */,
+				388A8E3D2B344C1D00C4B894 /* Messages.swift */,
+				38CAEB702B31A265007F2334 /* SportActivityData.swift */,
 				38CAEB6C2B31A221007F2334 /* SportActivity.swift */,
 				38CAEB6E2B31A241007F2334 /* HealthData.swift */,
-				38CAEB702B31A265007F2334 /* SportActivityData.swift */,
-				388A8E3D2B344C1D00C4B894 /* Messages.swift */,
 				389451FC2B3B0F4200F54854 /* Health.swift */,
+				38EDD35A2B3BF9E900F56AA1 /* ChatData.swift */,
+				38EDD35C2B3BFA8F00F56AA1 /* Chat.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -264,11 +276,15 @@
 				38350FCB2B1C971D0034C0D1 /* ContentView.swift in Sources */,
 				389452002B3B18C500F54854 /* HealthActivityManager.swift in Sources */,
 				38CAEB6B2B31A1EB007F2334 /* PlaceCategory.swift in Sources */,
+				38EDD35B2B3BF9E900F56AA1 /* ChatData.swift in Sources */,
 				389451FD2B3B0F4200F54854 /* Health.swift in Sources */,
 				388A8E3E2B344C1D00C4B894 /* Messages.swift in Sources */,
+				38EDD35D2B3BFA8F00F56AA1 /* Chat.swift in Sources */,
 				389451F92B3AF7D500F54854 /* RegisterView.swift in Sources */,
+				38EDD3592B3BF9AB00F56AA1 /* ChatManager.swift in Sources */,
 				38350FC92B1C971D0034C0D1 /* DemoApp.swift in Sources */,
 				385A04752B35983400C86B8D /* LoginViewModel.swift in Sources */,
+				386F10002B3C739F008BC0A6 /* SliderTest.swift in Sources */,
 				385A046C2B35929D00C86B8D /* LoginView.swift in Sources */,
 				385E02172B2DCF7C0044EEAE /* Home.swift in Sources */,
 				385E02152B2DCA040044EEAE /* navbar.swift in Sources */,
