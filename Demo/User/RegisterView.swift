@@ -61,39 +61,37 @@ struct RegisterView: View {
                         .cornerRadius(10)
                         .padding(.bottom, 20)
                     
-                  
+                    
+                    Toggle(isOn: $healthAgreement) {
+                        Text("Health Agreement")
+                            .onTapGesture {
+                                healthAgreement.toggle()
+                                          }
+                                                    }
+                    
+                    Toggle(isOn: $userAgreement) {
+                        Text("User Agreement")
+                            .onTapGesture {
+                                userAgreement.toggle()
+                                          }
+                                                 }
+                    
+                                   NavigationLink(destination: LoginView(), isActive: $redirectToLoginView)
+                                   {
+                                       Button("Kayıt Ol!") {
+                                           redirectToLoginView = true
+                                       }.font(.headline)
+                                           .foregroundColor(.white)
+                                           .padding()
+                                           .frame(maxWidth: .infinity)
+                                           .background(Color.blue)
+                                           .cornerRadius(10)
+                                   }
                     
                 }
                 .padding()
                 
-                
-                Toggle(isOn: $healthAgreement) {
-                    Text("Health Agreement")
-                        .padding()
-                        .onTapGesture {
-                            healthAgreement.toggle()
-                        }
-                }
-                
-                Toggle(isOn: $userAgreement) {
-                    Text("User Agreement")
-                        .padding()
-                        .onTapGesture {
-                            userAgreement.toggle()
-                        }
-                }
-                
-                NavigationLink(destination: LoginView(), isActive: $redirectToLoginView)
-                {
-                    Button("Kayıt Ol!") {
-                        redirectToLoginView = true
-                    }.font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }.padding()
+
             }
         }
     }

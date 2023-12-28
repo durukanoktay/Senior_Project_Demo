@@ -39,20 +39,21 @@ struct LoginView: View {
                         .cornerRadius(10)
                         .padding(.bottom, 20)
                     
+                    NavigationLink(destination: Home(), isActive: $redirectToHome)
+                    {
+                        Button("Giriş Yap") {
+                            redirectToHome = true
+                        }.font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    }
                     
                 }
                 .padding()
-                NavigationLink(destination: Home(), isActive: $redirectToHome)
-                {
-                    Button("Giriş Yap") {
-                        redirectToHome = true
-                    }.font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }
+
             }
         }
     }

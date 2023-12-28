@@ -9,7 +9,7 @@ import Foundation
 
 
 
-struct ChatData: Identifiable {
+struct ChatData: Identifiable, Decodable {
     var id = UUID()
     var content: String
     var sender: Bool //if sender is self True if sender is not False
