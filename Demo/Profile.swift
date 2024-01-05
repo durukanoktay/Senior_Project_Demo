@@ -42,7 +42,7 @@ struct Profile: View {
                         .foregroundColor(.cyan)
                         .overlay(Text("BMI:"))
                     
-                    NavigationLink(destination: UserSettings()) {
+                    NavigationLink(destination: UserSettingsView()) {
                         Image(systemName: "gearshape")
                     }.padding()
                 }

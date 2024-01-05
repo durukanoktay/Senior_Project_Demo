@@ -46,18 +46,14 @@ struct Explore: View {
                         Button(action: {
                             selectedFriend = friend
                         }) {
-                            Text("Send Friendship Request")
-                                .foregroundColor(.blue)
-                        }
-                    }
-                }
+                            Button("Send Friendship request") {
+                                
+                                                }.font(.headline)
+                            }
+                                        }
+                                    }
                 .padding(8)
                 .background(
-                    NavigationLink(
-                        destination: FriendRequestView(friend: $selectedFriend),
-                        isActive: Binding.constant(selectedFriend != nil),
-                        label: { EmptyView() }
-                    )
                 )
             }
             .navigationTitle("Suggested Users")
@@ -65,30 +61,7 @@ struct Explore: View {
     }
 }
 
-struct FriendRequestView: View {
-    @Binding var friend: Friend?
 
-    var body: some View {
-        VStack {
-            Text("Send friend request to \(friend?.name ?? "")?")
-                .padding()
-            HStack {
-                Button("Cancel") {
-                    friend = nil
-                }
-                .padding()
-                Spacer()
-                Button("Send Request") {
-                    // Handle sending friend request logic here
-                    friend?.isFriend = true
-                    friend = nil
-                }
-                .padding()
-            }
-        }
-        .navigationTitle("Friend Request")
-    }
-}
 
 struct Explore_Previews: PreviewProvider {
     static var previews: some View {
