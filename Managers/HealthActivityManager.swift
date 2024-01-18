@@ -10,7 +10,7 @@ import SwiftUI
 struct HealthActivityManager: View {
     
     @State private var selectedHealth: Health?
-    
+    @State private var enteredDuration: String = "" // geçici olarak süreyi tutmak için
     
     var body: some View {
         
@@ -21,6 +21,11 @@ struct HealthActivityManager: View {
                    }
                }.pickerStyle(WheelPickerStyle())
                
+               
+               
+               TextField("sağlık bilgilerinizi giriniz", text: $enteredDuration)
+                   .padding()
+
                Button("Sağlık bilgisini Değiştir") {
 
                }.font(.headline)

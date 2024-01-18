@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SportActivityManager: View {
     @State private var selectedActivity: SportActivity?
-    
+    @State private var enteredDuration: String = "" // geçici olarak süreyi tutmak için
     var body: some View {
         
         
@@ -28,7 +28,12 @@ struct SportActivityManager: View {
                        activities.append(SportActivityData(activityType: selectedActivity, duration: "Yeni Aktivite", icon: "plus"))
                    }
                }
+ 
 */
+               
+               TextField("dakika", text: $enteredDuration)
+                   .padding()
+
                Button("Aktivite Ekle") {
 
                }.font(.headline)
