@@ -149,6 +149,7 @@
 		385E02132B2DC9DE0044EEAE /* Prototypes */ = {
 			isa = PBXGroup;
 			children = (
+				38CAEB6A2B31A1EB007F2334 /* PlaceCategory.swift */,
 				38CAEB672B319F19007F2334 /* HealthKitManager.swift */,
 				385E02142B2DCA040044EEAE /* navbar.swift */,
 				386F0FFF2B3C739F008BC0A6 /* SliderTest.swift */,
@@ -177,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				385A046F2B3593D300C86B8D /* User Models */,
-				38CAEB6A2B31A1EB007F2334 /* PlaceCategory.swift */,
 				388A8E3D2B344C1D00C4B894 /* Messages.swift */,
 				38CAEB702B31A265007F2334 /* SportActivityData.swift */,
 				38CAEB6C2B31A221007F2334 /* SportActivity.swift */,

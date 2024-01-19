@@ -10,7 +10,7 @@ import SwiftUI
 struct UserSettings {
     var height: Float
     var weight: Int
-   var profileImage: Image
+    var profileImage: Image
     var description: String
 }
 
@@ -21,7 +21,7 @@ struct UserSettingsView: View {
         profileImage: Image(systemName: "person"),
         description: ""
     )
-
+    
     var body: some View {
         NavigationView {
             Form {

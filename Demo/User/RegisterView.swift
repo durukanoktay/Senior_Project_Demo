@@ -12,13 +12,21 @@ struct RegisterView: View {
     @State var name: String = ""
     @State var surname: String = ""
     @State var password: String = ""
-    @State var String = ""
+    @State var controlpassword = ""
     @State var email: String = ""
     @State var userAgreement = false
     @State var healthAgreement = false
     @State private var redirectToLoginView = false
+    @State private var showAlert = false
     
-    
+    func checkPassword()
+    {
+        if(password != controlpassword)     
+        {
+            print("Uyarı: Şifreler eşleşmiyor!")
+            showAlert = true
+        }
+    }
     
     var body: some View {
         NavigationView {
@@ -104,6 +112,10 @@ struct RegisterView: View {
                     
                 }
                 .padding()
+                // şifre eşleştirmesi için kontrol
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("Uyarı"), message: Text("Şifreler eşleşmiyor!"), dismissButton: .default(Text("Tamam")))
+                }
                 
 
             }
