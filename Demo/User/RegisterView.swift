@@ -19,6 +19,7 @@ struct RegisterView: View {
     @State private var redirectToLoginView = false
     
     
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -87,6 +88,19 @@ struct RegisterView: View {
                                            .background(Color.blue)
                                            .cornerRadius(10)
                                    }
+                    
+                    
+                    NavigationLink(destination: LoginView(), isActive: $redirectToLoginView)
+                    {
+                        Button("Giriş yap") {
+                            redirectToLoginView = true
+                        }.font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.green)
+                            .cornerRadius(10)
+                    }
                     
                 }
                 .padding()

@@ -12,6 +12,7 @@ struct LoginView: View {
     @State var username: String = ""
     @State var password: String = ""
     @State private var redirectToHome = false
+    @State private var redirectToRegisterView = false
     var body: some View {
         NavigationView {
             VStack {
@@ -51,6 +52,17 @@ struct LoginView: View {
                             .cornerRadius(10)
                     }
                     
+                    NavigationLink(destination: RegisterView(), isActive: $redirectToRegisterView)
+                    {
+                        Button("Kayıt Ol") {
+                            redirectToHome = true
+                        }.font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.green)
+                            .cornerRadius(10)
+                    }
                 }
                 .padding()
 
