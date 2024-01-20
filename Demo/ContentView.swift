@@ -8,33 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var userAuth: UserAuth
+
     var body: some View {
-        
+               if userAuth.isAuthenticated {	
         TabView()
-        {
-            Friends().tabItem
-            {
-                Image(systemName: "bubble")
-                Text("messages")
-            }
-            Explore().tabItem
-            { Image(systemName: "person.3.sequence")
-                Text("Explore")
-            }
-            Home().tabItem
-            {
-                Image (systemName: "house")
-                Text("Home")
-            }
-            Profile().tabItem
-            {
-                Image(systemName: "person")
-                Text("profile")
-            }
-            
-         
+                   {
+                       Friends().tabItem
+                       {
+                           Image(systemName: "bubble")
+                           Text("messages")
+                       }
+                       Explore().tabItem
+                       { Image(systemName: "person.3.sequence")
+                           Text("Explore")
+                       }
+                       Home().tabItem
+                       {
+                           Image (systemName: "house")
+                           Text("Home")
+                       }
+                       Profile().tabItem
+                       {
+                           Image(systemName: "person")
+                           Text("profile")
+                       }
+                       
+                   }
+        } else {
+            LoginView(userAuth: userAuth)
+                .environmentObject(userAuth)
         }
-         
         
     }
 }

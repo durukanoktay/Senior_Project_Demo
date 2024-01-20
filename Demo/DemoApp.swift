@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct DemoApp: App {
+    @StateObject private var userAuth = UserAuth()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(userAuth)
         }
     }
 }

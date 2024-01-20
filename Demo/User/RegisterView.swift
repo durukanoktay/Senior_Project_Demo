@@ -8,25 +8,8 @@
 import SwiftUI
 
 struct RegisterView: View {
-    
-    @State var name: String = ""
-    @State var surname: String = ""
-    @State var password: String = ""
-    @State var controlpassword = ""
-    @State var email: String = ""
-    @State var userAgreement = false
-    @State var healthAgreement = false
-    @State private var redirectToLoginView = false
-    @State private var showAlert = false
-    
-    func checkPassword()
-    {
-        if(password != controlpassword)     
-        {
-            print("Uyarı: Şifreler eşleşmiyor!")
-            showAlert = true
-        }
-    }
+    @StateObject var registerViewModel = RegisterViewModel()
+    @State private var showingAlert = false
     
     var body: some View {
         NavigationView {
@@ -38,7 +21,7 @@ struct RegisterView: View {
                 VStack(alignment: .leading) {
                     Text("Ad")
                         .font(.headline)
-                    TextField("Adınız", text: $name)
+                    TextField("Adınız", text: $registerViewModel.firstName)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
@@ -46,7 +29,7 @@ struct RegisterView: View {
                     
                     Text("Soyad")
                         .font(.headline)
-                    TextField("Soyadınız", text: $surname)
+                    TextField("Soyadınız", text: $registerViewModel.lastName)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
@@ -54,7 +37,7 @@ struct RegisterView: View {
                     
                     Text("E-posta")
                         .font(.headline)
-                    TextField("E-posta adresiniz", text: $email)
+                    TextField("E-posta adresiniz", text: $registerViewModel.email)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
@@ -64,65 +47,41 @@ struct RegisterView: View {
                     
                     Text("Şifre")
                         .font(.headline)
-                    SecureField("Şifreniz", text: $password)
+                    SecureField("Şifreniz", text: $registerViewModel.password)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .padding(.bottom, 20)
                     
-                    
-                    Toggle(isOn: $healthAgreement) {
-                        Text("Health Agreement")
-                            .onTapGesture {
-                                healthAgreement.toggle()
-                                          }
-                                                    }
-                    
-                    Toggle(isOn: $userAgreement) {
-                        Text("User Agreement")
-                            .onTapGesture {
-                                userAgreement.toggle()
-                                          }
-                                                 }
-                    
-                                   NavigationLink(destination: LoginView(), isActive: $redirectToLoginView)
-                                   {
-                                       Button("Kayıt Ol!") {
-                                           redirectToLoginView = true
-                                       }.font(.headline)
-                                           .foregroundColor(.white)
-                                           .padding()
-                                           .frame(maxWidth: .infinity)
-                                           .background(Color.blue)
-                                           .cornerRadius(10)
-                                   }
-                    
-                    
-                    NavigationLink(destination: LoginView(), isActive: $redirectToLoginView)
-                    {
-                        Button("Giriş yap") {
-                            redirectToLoginView = true
-                        }.font(.headline)
+                    Button(action: {
+                        registerViewModel.register()
+                        print("Clicked register button")
+                    }) {
+                        Text("Kayıt Ol")
+                            .font(.headline)
                             .foregroundColor(.white)
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .background(Color.green)
+                            .background(Color.blue)
                             .cornerRadius(10)
                     }
-                    
+                    .alert(isPresented: $registerViewModel.isRegistered) {
+                        Alert(title: Text("Kayıt Başarılı"), message: Text("Kayıt işlemi başarıyla tamamlandı."), dismissButton: .default(Text("Tamam")))
+                    }
+                    .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("Hata"), message: Text(registerViewModel.errorMessage), dismissButton: .default(Text("Tamam")))
+                    }
                 }
                 .padding()
-                // şifre eşleştirmesi için kontrol
-                .alert(isPresented: $showAlert) {
-                    Alert(title: Text("Uyarı"), message: Text("Şifreler eşleşmiyor!"), dismissButton: .default(Text("Tamam")))
-                }
-                
-
             }
         }
     }
-    }
+}
 
-#Preview {
-    RegisterView()
+
+
+struct RegisterView_Previews: PreviewProvider {
+    static var previews: some View {
+        RegisterView()
+    }
 }

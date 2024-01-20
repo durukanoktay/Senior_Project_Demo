@@ -10,7 +10,7 @@ struct Profile: View {
     var body: some View {
         NavigationView {
             VStack {
-                Image("") // Burada kendi resminizi eklemeyi unutmayın
+                Image("Durukan")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 150.0, height: 150.0)
@@ -18,7 +18,7 @@ struct Profile: View {
                     .overlay(
                         Circle().stroke(Color.purple, lineWidth: 5)
                     )
-                Text("Name")
+                Text("Durukan")
                     .font(Font.custom("Pacifico-Regular", size: 40))
                     .bold()
                     .foregroundColor(.black)
@@ -30,17 +30,17 @@ struct Profile: View {
                         .padding(.all, 10.0)
                         .frame(height: 60.0)
                         .foregroundColor(.cyan)
-                        .overlay(Text("Weight:"))
+                        .overlay(Text("Weight: 90 kg"))
                     RoundedRectangle(cornerRadius: 10.0)
                         .padding(.all, 10.0)
                         .frame(height: 60.0)
                         .foregroundColor(.cyan)
-                        .overlay(Text("Height:"))
+                        .overlay(Text("Height: 1,79m"))
                     RoundedRectangle(cornerRadius: 10.0)
                         .padding(.all, 10.0)
                         .frame(height: 60.0)
                         .foregroundColor(.cyan)
-                        .overlay(Text("BMI:"))
+                        .overlay(Text("BMI: 26.12"))
                     
                     NavigationLink(destination: UserSettingsView()) {
                         Image(systemName: "gearshape")

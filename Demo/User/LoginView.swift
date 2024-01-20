@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct LoginView: View {
- 
-    @State var username: String = ""
-    @State var password: String = ""
-    @State private var redirectToHome = false
-    @State private var redirectToRegisterView = false
+    @State private var showingAlert: Bool = false
+    @EnvironmentObject var userAuth: UserAuth
+    @StateObject var loginViewModel: LoginViewModel
+    
+    init(userAuth: UserAuth) {
+        _loginViewModel = StateObject(wrappedValue: LoginViewModel(userAuth: userAuth))
+    }
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -24,7 +27,7 @@ struct LoginView: View {
                 VStack(alignment: .leading) {
                     Text("E-posta")
                         .font(.headline)
-                    TextField("E-posta adresiniz", text: $username)
+                    TextField("E-posta adresiniz", text: $loginViewModel.email)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
@@ -34,43 +37,43 @@ struct LoginView: View {
                     
                     Text("Şifre")
                         .font(.headline)
-                    SecureField("Şifreniz", text: $password)
+                    SecureField("Şifreniz", text: $loginViewModel.password)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .padding(.bottom, 20)
                     
-                    NavigationLink(destination: Home(), isActive: $redirectToHome)
-                    {
-                        Button("Giriş Yap") {
-                            redirectToHome = true
-                        }.font(.headline)
+                    Button(action: {
+                        loginViewModel.login()
+                    }) {
+                        Text("Giriş Yap")
+                            .font(.headline)
                             .foregroundColor(.white)
                             .padding()
                             .frame(maxWidth: .infinity)
                             .background(Color.blue)
                             .cornerRadius(10)
                     }
-                    
-                    NavigationLink(destination: RegisterView(), isActive: $redirectToRegisterView)
-                    {
-                        Button("Kayıt Ol") {
-                            redirectToHome = true
-                        }.font(.headline)
-                            .foregroundColor(.white)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.green)
-                            .cornerRadius(10)
+                    .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("Giriş Hatası"), message: Text("E-posta veya şifre yanlış."), dismissButton: .default(Text("Tamam")))
                     }
                 }
                 .padding()
-
+                NavigationLink(destination: RegisterView()) {
+                    Text("Hesabınız yok mu? Kayıt Ol")
+                        .foregroundColor(.blue)
+                }
+                .padding(.top, 15)
             }
         }
     }
 }
 
-#Preview {
-LoginView()
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        let userAuth = UserAuth()
+        LoginView(userAuth: userAuth)
+            .environmentObject(userAuth)
+    }
 }
+
