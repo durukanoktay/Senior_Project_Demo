@@ -10,6 +10,7 @@ import SwiftUI
 struct RegisterView: View {
     @StateObject var registerViewModel = RegisterViewModel()
     @State private var showingAlert = false
+    @State private var userAgreement = false
     
     var body: some View {
         NavigationView {
@@ -19,24 +20,29 @@ struct RegisterView: View {
                     .fontWeight(.bold)
                 
                 VStack(alignment: .leading) {
+                    
+//
                     Text("Ad")
                         .font(.headline)
+                    
                     TextField("Adınız", text: $registerViewModel.firstName)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .padding(.bottom, 20)
-                    
+//
                     Text("Soyad")
                         .font(.headline)
+                    
                     TextField("Soyadınız", text: $registerViewModel.lastName)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .padding(.bottom, 20)
-                    
+//
                     Text("E-posta")
                         .font(.headline)
+                    
                     TextField("E-posta adresiniz", text: $registerViewModel.email)
                         .padding()
                         .background(Color(.systemGray6))
@@ -44,14 +50,40 @@ struct RegisterView: View {
                         .padding(.bottom, 20)
                         .textInputAutocapitalization(.never)
                         .keyboardType(.emailAddress)
-                    
+//
                     Text("Şifre")
                         .font(.headline)
+                    
                     SecureField("Şifreniz", text: $registerViewModel.password)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .padding(.bottom, 20)
+//
+                    Text("Doğum Tarihi")
+                        .font(.headline)
+                    
+                    DatePicker("Doğum tarihinizi seçiniz",
+                               selection: $registerViewModel.selectedDate,
+                                           displayedComponents: .date)
+//
+                    /*
+                    Text("Kullanıcı Şartları")
+                        .font(.headline)
+                    
+                    Text("* Şifreniz en az 8 karakterden oluşmalı ve en az bir büyük harf ile özel karakter içermelidir.\n* Yaşınız 16'dan büyük olmalıdır").font(.footnote)
+                    
+                    
+                */
+                    Toggle(isOn: $userAgreement) {
+                        Text("Kullanıcı sözleşmesini onaylıyorum")
+                            .padding()
+                            .onTapGesture {
+                                userAgreement.toggle()
+                            }
+                    }
+                    .padding()
+                    
                     
                     Button(action: {
                         registerViewModel.register()

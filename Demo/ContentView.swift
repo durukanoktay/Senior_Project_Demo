@@ -11,7 +11,8 @@ struct ContentView: View {
     @EnvironmentObject var userAuth: UserAuth
 
     var body: some View {
-               if userAuth.isAuthenticated {	
+      /*
+        if userAuth.isAuthenticated {
         TabView()
                    {
                        Friends().tabItem
@@ -39,7 +40,32 @@ struct ContentView: View {
             LoginView(userAuth: userAuth)
                 .environmentObject(userAuth)
         }
+        */
         
+        
+        TabView()
+                   {
+                       Friends().tabItem
+                       {
+                           Image(systemName: "bubble")
+                           Text("messages")
+                       }
+                       Explore().tabItem
+                       { Image(systemName: "person.3.sequence")
+                           Text("Explore")
+                       }
+                       Home().tabItem
+                       {
+                           Image (systemName: "house")
+                           Text("Home")
+                       }
+                       Profile().tabItem
+                       {
+                           Image(systemName: "person")
+                           Text("profile")
+                       }
+                       
+                   }
     }
 }
 

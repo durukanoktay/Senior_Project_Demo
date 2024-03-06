@@ -30,12 +30,14 @@ class RegisterViewModel: ObservableObject {
     /// A boolean indicating whether the user has successfully registered.
     @Published var isRegistered: Bool = false
     
+    @Published var selectedDate: Date = Date()
+    
     /// An instance of `AuthApiClient` for making API calls related to authentication.
     private let authApiClient = AuthApiClient()
     
     func register() {
         isLoading = true
-        errorMessage = ""
+        errorMessage = "your password must be consist of at least one special letter and one upper letter"
         authApiClient.register(email: email, password: password) { [weak self] result in
             DispatchQueue.main.async {
                 self?.isLoading = false

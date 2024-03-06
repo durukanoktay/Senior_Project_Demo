@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C7B36492B9872C800437AEE /* coreLocationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B36482B9872C800437AEE /* coreLocationTest.swift */; };
+		2C8FAC172B8FBB3800C8D21D /* Alert_prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8FAC162B8FBB3800C8D21D /* Alert_prototype.swift */; };
 		38350FC92B1C971D0034C0D1 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38350FC82B1C971D0034C0D1 /* DemoApp.swift */; };
 		38350FCB2B1C971D0034C0D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38350FCA2B1C971D0034C0D1 /* ContentView.swift */; };
 		38350FCD2B1C971D0034C0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38350FCC2B1C971D0034C0D1 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C7B36482B9872C800437AEE /* coreLocationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreLocationTest.swift; sourceTree = "<group>"; };
+		2C8FAC162B8FBB3800C8D21D /* Alert_prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_prototype.swift; sourceTree = "<group>"; };
 		38350FC52B1C971D0034C0D1 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38350FC82B1C971D0034C0D1 /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		38350FCA2B1C971D0034C0D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				38CAEB672B319F19007F2334 /* HealthKitManager.swift */,
 				385E02142B2DCA040044EEAE /* navbar.swift */,
 				386F0FFF2B3C739F008BC0A6 /* SliderTest.swift */,
+				2C8FAC162B8FBB3800C8D21D /* Alert_prototype.swift */,
+				2C7B36482B9872C800437AEE /* coreLocationTest.swift */,
 			);
 			path = Prototypes;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 				389452042B3B20FF00F54854 /* UserSettings.swift in Sources */,
 				38CAEB682B319F19007F2334 /* HealthKitManager.swift in Sources */,
 				38350FCB2B1C971D0034C0D1 /* ContentView.swift in Sources */,
+				2C7B36492B9872C800437AEE /* coreLocationTest.swift in Sources */,
 				389452002B3B18C500F54854 /* HealthActivityManager.swift in Sources */,
 				38CAEB6B2B31A1EB007F2334 /* PlaceCategory.swift in Sources */,
 				3891681F2B5C33B7007BA86A /* ApiEndpoints.swift in Sources */,
@@ -343,6 +350,7 @@
 				385E02232B2EF1950044EEAE /* Explore.swift in Sources */,
 				38CAEB6F2B31A241007F2334 /* HealthData.swift in Sources */,
 				38CAEB6D2B31A221007F2334 /* SportActivity.swift in Sources */,
+				2C8FAC172B8FBB3800C8D21D /* Alert_prototype.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
