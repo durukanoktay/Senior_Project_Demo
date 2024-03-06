@@ -47,12 +47,14 @@ struct RegisterView: View {
                     
                     Text("Şifre")
                         .font(.headline)
+                    
                     SecureField("Şifreniz", text: $registerViewModel.password)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .padding(.bottom, 20)
                     
+                    Text("Şifreniz en az 8 karakterden oluşmalı ve en az bir büyük harf ile özel karakter içermelidir.").font(.footnote)
                     Button(action: {
                         registerViewModel.register()
                         print("Clicked register button")

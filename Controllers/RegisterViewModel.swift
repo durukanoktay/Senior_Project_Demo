@@ -35,7 +35,7 @@ class RegisterViewModel: ObservableObject {
     
     func register() {
         isLoading = true
-        errorMessage = ""
+        errorMessage = "your password must be consist of at least one special letter and one upper letter"
         authApiClient.register(email: email, password: password) { [weak self] result in
             DispatchQueue.main.async {
                 self?.isLoading = false

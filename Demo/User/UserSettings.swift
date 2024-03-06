@@ -12,6 +12,7 @@ struct UserSettings {
     var weight: Int
     var profileImage: Image
     var description: String
+    var age: Int
 }
 
 struct UserSettingsView: View {
@@ -19,7 +20,8 @@ struct UserSettingsView: View {
         height: 0.0,
         weight: 0,
         profileImage: Image(systemName: "person"),
-        description: ""
+        description: "",
+        age: 0
     )
     
     var body: some View {
@@ -38,6 +40,14 @@ struct UserSettingsView: View {
                         Text("Kilo:")
                         Spacer()
                         TextField("Kilo", value: $userSettings.weight, formatter: NumberFormatter())
+                            .keyboardType(.numberPad)
+                            .frame(width: 100)
+                    }
+                    
+                    HStack {
+                        Text("Yaş:")
+                        Spacer()
+                        TextField("Yaş", value: $userSettings.age, formatter: NumberFormatter())
                             .keyboardType(.numberPad)
                             .frame(width: 100)
                     }
